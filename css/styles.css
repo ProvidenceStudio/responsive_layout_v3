@@ -161,6 +161,16 @@ img {
         margin-top: 40px; 
     }
 
+    .first {
+        float: left; 
+        width: 50%; 
+    }
+
+    .second {
+        float: right;
+        width: 50%; 
+    }
+
 
 }
 
