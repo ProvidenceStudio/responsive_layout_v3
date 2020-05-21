@@ -14,7 +14,7 @@ body {
 }
 
 p {
-    font-size: 14px; 
+    font-size: 15px; 
     font-weight: 300; 
     margin-bottom: 30px; 
 }
@@ -49,7 +49,7 @@ img {
 
 .name { 
     text-align: center;
-    margin-bottom: 30px; 
+    margin-bottom: 1.3em; 
 }
 
 .main-nav {
@@ -66,16 +66,16 @@ img {
 
 /* ---- Layout Containers ---- */
 
+
 .main-header {
   padding-top: 1em;
   padding-bottom: 1em; 
+  padding-left: 1em; 
+  padding-right: 1em; 
 }
 
 .about {
     text-align: center;
-    padding-left: 1em; 
-    padding-right: 1em; 
-    margin-bottom: 30px;
 }
 
 .featured-projects {
@@ -85,10 +85,6 @@ img {
     padding-bottom: 30px; 
 }
 
-.first, .second {
-    padding-left: 1em;
-    padding-right: 1em; 
-}
 
 .section {
     text-align: center; 
@@ -108,6 +104,13 @@ img {
 .profile-photo {
     width: 70%;
     margin-top: 40px; 
+    margin-bottom: 20px; 
+}
+
+.project {
+    margin-bottom: 40px; 
+    padding-left: 1em;
+    padding-right: 1em; 
 }
 
 .footer-name {
@@ -131,15 +134,31 @@ img {
         margin: 0 auto; 
     }
 
-    .first {
-        float: left; 
-        width: 50%;
-        padding-right: 1em;
+    .main-header {
+        text-align: center; 
     }
 
-    .second {
+    nav li {
+        display: inline-block; 
+    }
+
+    .main-nav a {
+        display: block;
+        text-align: center;
+        padding: 10px 15px;
+        background: #fafafa;
+    }
+
+    .profile-photo {
         float: right; 
         width: 50%;
+        padding-left: 20px; 
+        margin: 0; 
+    }
+
+    .about {
+        text-align: left; 
+        margin-top: 40px; 
     }
 
 
