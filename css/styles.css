@@ -1,0 +1,163 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    background: #fafafa; 
+    font-family: 'Quicksand', sans-serif; 
+    line-height: 1.3em;
+    color: #3a3a3a;
+}
+
+p {
+    font-size: 14px; 
+    font-weight: 300; 
+    margin-bottom: 30px; 
+}
+
+a {
+    text-decoration: none; 
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 800; 
+    text-transform: uppercase; 
+    color: #4a4a4a;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold; 
+    margin-bottom: 40px; 
+    text-align: center;
+}
+
+
+img {
+    max-width: 100%; 
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name { 
+    text-align: center;
+    margin-bottom: 30px; 
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.main-nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    background: #ffffff;
+    margin-bottom: 5px;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  padding-top: 1em;
+  padding-bottom: 1em; 
+}
+
+.about {
+    text-align: center;
+    padding-left: 1em; 
+    padding-right: 1em; 
+    margin-bottom: 30px;
+}
+
+.featured-projects {
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+}
+
+.first, .second {
+    padding-left: 1em;
+    padding-right: 1em; 
+}
+
+.section {
+    text-align: center; 
+    padding-left: 1em;
+    padding-right: 1em; 
+    margin-bottom: 50px; 
+}
+
+.main-footer {
+    border-top: 1px solid #cccccc;
+    padding: 0 1em; 
+}
+
+
+/* ---- Page Elements ---- */
+
+.profile-photo {
+    width: 70%;
+    margin-top: 40px; 
+}
+
+.footer-name {
+    float: left; 
+    font-weight: bold; 
+}
+
+.back-to-top {
+    float: right;
+    font-size: 12px; 
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+    .container {
+        width: 95%; 
+        margin: 0 auto; 
+    }
+
+    .first {
+        float: left; 
+        width: 50%;
+        padding-right: 1em;
+    }
+
+    .second {
+        float: right; 
+        width: 50%;
+    }
+
+
+}
+
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+@media (min-width: 1024px) {
+
+    .container {
+        width: 80%;
+        max-width: 1200px; 
+    }
+
+}

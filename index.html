@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Name Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand">
 </head>
 <body>
     
+<header class="main-header">
+    <nav class="container">
+       <h1 id="home" class="name">Student Name</h1> 
+       <ul class="main-nav">
+           <li><a href="#home">Home</a></li>
+           <li><a href="#portfolio">Portfolio</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#contact">Contact</a></li>
+       </ul>
+    </nav>
+
+    <div class="about">
+        <img class="profile-photo" src="images/responsive-layout-profile.png" alt="Profile Photo of Student">
+        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+    </div>
+
+</header>
+
+<main class="container">
+
+    <div class="featured-projects clearfix">
+        <h4 id="portfolio">Portfolio</h4>
+
+        <div class="first">
+            <img src="images/portfolio-1.png" alt="Image of marketing page">
+            <h2>Marketing Page</h2>
+            <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+
+            <img src="images/portfolio-2.png" alt="Image of search page">
+            <h2>Search Page</h2>
+            <p>This project searches through a specific database to find infomation that the user is trying to look up.</p>
+
+            <img src="images/portfolio-3.png" alt="Image of travel app">
+            <h2>Travel App</h2>
+            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+        </div>
+
+        <div class="second">
+            <img src="images/portfolio-4.png" alt="Image of favorite spots on map">
+            <h2>Map of Favorite Spots</h2>
+            <p>This project uses mapping APIs to plot points for my favoirte spots in the city for a do-it-yourself walking tour.</p>
+
+            <img src="images/portfolio-5.png" alt="Image of photo gallery">
+            <h2>Photo Gallery</h2>
+            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+
+            <img src="images/portfolio-6.png" alt="Image of calculator">
+            <h2>Calculator</h2>
+            <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h4 id="skills">Skills</h4>
+        <p>I specialize in UX/UI Design, as well as website development for the following platforms:</p>
+        <ul>
+            <li><strong>WordPress</strong></li>
+            <li><strong>Squarespace</strong></li>
+            <li><strong>Shopify</strong></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h4 id="contact">Contact</h4>
+        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+        <span>Phone <strong>+1(111)555-1234</strong></br>
+        Email <strong>email@yoursite.com</strong></span>
+    </div>
+
+</main>
+
+    <footer class="main-footer">
+        <p class="footer-name">Student name</p>
+        <p class="back-to-top"><a href="#home">Back to Top</a></p>
+    </footer>
+
 </body>
 </html>
