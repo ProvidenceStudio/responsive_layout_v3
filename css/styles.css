@@ -22,6 +22,7 @@ p {
 a {
     text-decoration: none; 
     font-family: 'Montserrat', sans-serif; 
+    font-size: 0.8em; 
     font-weight: 800; 
     text-transform: uppercase; 
     color: #4a4a4a;
@@ -64,8 +65,24 @@ img {
     margin-bottom: 5px;
 }
 
+.main-nav a:hover {
+    color: #ff0000; 
+}
+
 /* ---- Layout Containers ---- */
 
+.about, 
+.section {
+    display: block; 
+    text-align: center; 
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 1em 1em 2em 1em; 
+}
+
+.container {
+    text-align: center;
+}
 
 .main-header {
   padding-top: 1em;
@@ -74,9 +91,6 @@ img {
   padding-right: 1em; 
 }
 
-.about {
-    text-align: center;
-}
 
 .featured-projects {
     background-color: #ffffff;
@@ -85,13 +99,6 @@ img {
     padding-bottom: 30px; 
 }
 
-
-.section {
-    text-align: center; 
-    padding-left: 1em;
-    padding-right: 1em; 
-    margin-bottom: 50px; 
-}
 
 .main-footer {
     border-top: 1px solid #cccccc;
@@ -121,6 +128,10 @@ img {
 .back-to-top {
     float: right;
     font-size: 12px; 
+}
+
+.footer-nav {
+    display: none; 
 }
 
 /* ================================= 
@@ -169,6 +180,20 @@ img {
     .second {
         float: right;
         width: 50%; 
+    }
+
+    .back-to-top {
+        display: none; 
+    }
+
+    .footer-nav {
+        display: inline-block;
+        float: right; 
+        margin-top: 15px; 
+    }
+
+    .footer-nav a {
+        padding: 10px 15px;
     }
 
 
