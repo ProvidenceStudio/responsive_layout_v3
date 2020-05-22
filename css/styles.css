@@ -26,14 +26,16 @@ a {
     font-weight: 800; 
     text-transform: uppercase; 
     color: #4a4a4a;
+    letter-spacing: 2px;
 }
 
 h4 {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif; 
-    font-weight: bold; 
+    font-weight: 800; 
     margin-bottom: 40px; 
     text-align: center;
+    letter-spacing: 2px; 
 }
 
 
@@ -100,11 +102,6 @@ img {
 }
 
 
-.main-footer {
-    border-top: 1px solid #cccccc;
-    padding: 0 1em; 
-}
-
 
 /* ---- Page Elements ---- */
 
@@ -120,19 +117,13 @@ img {
     padding-right: 1em; 
 }
 
+
 .footer-name {
     float: left; 
     font-weight: bold; 
 }
 
-.back-to-top {
-    float: right;
-    font-size: 12px; 
-}
 
-.footer-nav {
-    display: none; 
-}
 
 /* ================================= 
   Media Queries
@@ -141,7 +132,6 @@ img {
 @media (min-width: 768px) {
 
     .container {
-        width: 95%; 
         margin: 0 auto; 
     }
 
@@ -209,8 +199,33 @@ img {
 @media (min-width: 1024px) {
 
     .container {
-        width: 80%;
         max-width: 1200px; 
     }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        background-color: #107896; 
+        padding: 20px;  
+    }
+
+    .footer-name {
+        float: left; 
+        height: 12px; 
+        line-height: 12px;
+    }
+
+    .footer-nav {
+        text-align: right; 
+    }
+
+    .full {
+        display: inline-block; 
+        padding-right: 20px; 
+    }
+
+
+
+   
 
 }
