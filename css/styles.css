@@ -23,7 +23,6 @@ a {
     text-decoration: none; 
     font-family: 'Montserrat', sans-serif; 
     font-size: 0.8em; 
-    font-weight: 800; 
     text-transform: uppercase; 
     color: #4a4a4a;
     letter-spacing: 2px;
@@ -52,7 +51,7 @@ img {
 
 .name { 
     text-align: center;
-    margin-bottom: 1.3em; 
+    margin-bottom: 40px; 
 }
 
 .main-nav {
@@ -73,35 +72,38 @@ img {
 
 /* ---- Layout Containers ---- */
 
-.about, 
-.section {
+.about {
     display: block; 
     text-align: center; 
     width: 100%; 
     margin: 0 auto; 
-    padding: 1em 1em 2em 1em; 
 }
+
+.skills, .contact {
+    margin-bottom: 40px; 
+}
+
+.skills {
+    background-color: #b3b3b3;
+    padding-top: 30px;
+    padding-bottom: 50px; 
+}
+
 
 .container {
     text-align: center;
 }
 
 .main-header {
-  padding-top: 1em;
-  padding-bottom: 1em; 
-  padding-left: 1em; 
-  padding-right: 1em; 
+  padding: 1em; 
 }
 
 
-.featured-projects {
-    background-color: #ffffff;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px; 
+footer {
+    padding: 1em; 
+    background-color: #107896;
+    height: 80px; 
 }
-
-
 
 /* ---- Page Elements ---- */
 
@@ -111,18 +113,21 @@ img {
     margin-bottom: 20px; 
 }
 
-.project {
-    margin-bottom: 40px; 
-    padding-left: 1em;
-    padding-right: 1em; 
+
+h3 {
+    margin: 0; 
+    float: left;
+    height: 12px;
+    line-height: 12px; 
 }
 
-
-.footer-name {
-    float: left; 
-    font-weight: bold; 
+.footer-nav {
+    margin: 0; 
 }
 
+.full {
+    display: none; 
+}
 
 
 /* ================================= 
@@ -131,60 +136,14 @@ img {
 
 @media (min-width: 768px) {
 
-    .container {
-        margin: 0 auto; 
-    }
-
-    .main-header {
-        text-align: center; 
-    }
-
-    nav li {
-        display: inline-block; 
-    }
-
-    .main-nav a {
-        display: block;
-        text-align: center;
-        padding: 10px 15px;
-        background: #fafafa;
-    }
-
-    .profile-photo {
-        float: right; 
-        width: 50%;
-        padding-left: 20px; 
-        margin: 0; 
-    }
-
-    .about {
-        text-align: left; 
-        margin-top: 40px; 
-    }
-
-    .first {
-        float: left; 
-        width: 50%; 
-    }
-
-    .second {
-        float: right;
-        width: 50%; 
-    }
-
-    .back-to-top {
+    
+    .top {
         display: none; 
     }
-
-    .footer-nav {
-        float: right; 
-        margin-top: 15px; 
+    
+    .full {
+        display: inline-block; 
     }
-
-    .footer-nav a {
-        padding: 10px 15px;
-    }
-
 
 }
 
@@ -198,34 +157,17 @@ img {
 
 @media (min-width: 1024px) {
 
-    .container {
-        max-width: 1200px; 
-    }
 
-    footer {
-        position: absolute;
-        width: 100%;
-        background-color: #107896; 
-        padding: 20px;  
-    }
 
-    .footer-name {
-        float: left; 
-        height: 12px; 
-        line-height: 12px;
+    .top {
+        display: none; 
     }
-
-    .footer-nav {
-        text-align: right; 
-    }
-
+    
     .full {
         display: inline-block; 
-        padding-right: 20px; 
     }
-
-
-
    
+
+    
 
 }
